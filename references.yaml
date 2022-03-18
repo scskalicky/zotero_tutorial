@@ -1,0 +1,35 @@
+---
+references:
+- id: skalicky2018
+  author:
+  - family: Skalicky
+    given: Stephen
+  container-title: Humor - International Journal of Humor Research
+  DOI: 10.1515/humor-2017-0061
+  issue: 4
+  issued: 2018
+  key: EE3DG235
+  libraryID: 1
+  page: 583-602
+  providerKey: 2509FBBE-5BB0-44C4-B119-6083A81ED673
+  title: Lexical priming in humorous satirical newspaper headlines
+  type: article-journal
+  volume: 31
+- id: skalicky2015
+  author:
+  - family: Skalicky
+    given: Stephen
+  - family: Berger
+    given: C. M.
+  - family: Bell
+    given: Nancy D.
+  container-title: Journal of Pragmatics
+  issued: 2015
+  key: HV3FP3FC
+  libraryID: 1
+  page: 18-31
+  providerKey: 2509FBBE-5BB0-44C4-B119-6083A81ED673
+  title: The functions of "just kidding" in American English
+  type: article-journal
+  volume: 85
+...
