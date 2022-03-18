@@ -2,7 +2,7 @@
 
 Writing tutorials, reports, and papers in markdown is a pleasant experience because of the easy incorporation of text, code, and images without the need to rely on word processing software. However, I've still been writing most of my journal articles and other research outputs using Microsoft Word. The main reason is because I rely heavily on my Zotero library to manage my collection of references, and Zotero has relatively okay intergration with word (well, sometimes it breaks). 
 
-I'm a bit late to the party, but I've recently found that R Studio has some very painless integration with Zotero that allows for library searching via the citation picker. This means one can have the best of both words - writing in markdown *and* having integrated access to their zotero library. It takes only a minor bit of setting up, but I'll write this process up here for those who might be interested in ditching Word and using two great open source programs to writing your academic papers. But first, I'll give some brief motivation for why how I've found Zotero to be a critical part of my academic writing process.
+I'm a bit late to the party, but I've recently found that R Studio has some very painless integration with Zotero that allows for library searching via the citation picker. This means one can have the best of both words - writing in markdown *and* having integrated access to their Zotero library. It takes only a minor bit of setting up, but I'll write this process up here for those who might be interested in ditching Word and using two great open source programs to writing your academic papers. But first, I'll give some brief motivation for why how I've found Zotero to be a critical part of my academic writing process.
 
 ### How Zotero integrates with MS Word/others
 
@@ -36,7 +36,7 @@ R Studio continues to impress as an all-in-one IDE for doing analyses with R. R 
 
 #### Step 0. Prerequisites
 
-You should have R Studio version 1.4 or greaterand Zotero desktop installed on your computer, and have some references already in Zotero. Maybe this is a good opportunity to prompt you to update both programs! If you want to connect to github, you should have a github account and know how to make a repository.
+You should have R Studio version 1.4 or greater and Zotero desktop installed on your computer, and have some references already in Zotero. Maybe this is a good opportunity to prompt you to update both programs! If you want to connect to GitHub, you should have a GitHub account and know how to make a repository.
 
 #### Step 1. Get Better BibTeX into Zotero
 
@@ -54,7 +54,7 @@ That's pretty much it - If you have R Studio 1.4+, then it will [automatically d
 
 I'd strongly recommend creating a new R Studio project, because R Studio is going to use Zotero to create a `.bib` file and you'll want these files to be in the same folder. 
 
-To go the extra step, you could create a project using git so that you can use R Studio to push your changes to github (you can skip this step if you like). 
+To go the extra step, you could create a project using git so that you can use R Studio to push your changes to GitHub (you can skip this step if you like). 
 
 #### Project w/o GitHub integration
 
@@ -68,7 +68,7 @@ If you create a regular project, it will look something like this:
 
 #### (Optional) Project w/ GitHub integration
 
-To connect to a github repo, go ahead and make a github repo for this project, then copy the https URL for connecting to the repo. 
+To connect to a GitHub repo, go ahead and make a GitHub repo for this project, then copy the https URL for connecting to the repo. 
 
 Then, choose to make a new R Studio project with version control, then choose git, then enter your repo url:
 
@@ -86,7 +86,7 @@ If all goes well, R Studio should clone into the repository and you should see t
 
 If you have not connected via R Studio before, you will likely need to authenticate, which means creating either a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh).
 
-I have experienced a few issues with this primarily because I have used more than one github account through R Studio and setting the credentials can get messy. If you're familiar with bash and command line git, you can always use the terminal within R Studio to try to sort these things. However, I've found that if you use the HTTPS method of cloning into a repo, you can append your username to the URL to at least avoid some credentialing issues:
+I have experienced a few issues with this primarily because I have used more than one GitHub account through R Studio and setting the credentials can get messy. If you're familiar with bash and command line git, you can always use the terminal within R Studio to try to sort these things. However, I've found that if you use the HTTPS method of cloning into a repo, you can append your username to the URL to at least avoid some credentialing issues:
 
 ***
 
@@ -108,7 +108,7 @@ Anyhow, after doing this, if you click "OK" R Studio will create a markdown file
 
 ***
 
-If you're using a GitHub connected project, now is a good time to test if you can push to your repo. You should see your new markdown file in the github environment pane:
+If you're using a GitHub connected project, now is a good time to test if you can push to your repo. You should see your new markdown file in the GitHub environment pane:
 
 ![](https://i.imgur.com/Ms4HT1y.png)
 
@@ -141,7 +141,7 @@ Voila:
 
 ![](https://i.imgur.com/SBhiufi.png)
 
-Now, I have experienced GitHub hell in R Studio a few times, which is why this step is optional. But when it works, it can be very convenient to have the GUI and stage commits and pushses all from the same program you are writing code and markdown in. You can always use the command lines to push/pull if you prefer.
+Now, I have experienced GitHub hell in R Studio a few times, which is why this step is optional. But when it works, it can be very convenient to have the GUI and stage commits and pushses all from the same program you are writing code and markdown in. You can always use the command line to push/pull if you prefer.
 
 #### Step 3. Adding some citations
 
@@ -165,7 +165,7 @@ Note that you can also just search databases directly to find resources *not* in
 
 ![](https://i.imgur.com/SohV7Mh.png)
 
-Note at the bottom there is the option to "create bibliography", and this is how R Studio will integrated with BetterBixTex to keep your citations happy. I chose a `.yaml` file with csl but the default will be a `.bib` file. You see, if you were to use Zotero with another markdown program (like VS Code) you'd need to import your entire `.bib` file to wherever your markdown program is, and export it everytime you update your zotero library. Because R Studio will make a new `.bib` file for you each time, it becomes seamless and you should never get an error when knitting related to not having a reference in your bibliography!
+Note at the bottom there is the option to "create bibliography", and this is how R Studio will integrate with BetterBixTex to keep your citations happy. I chose a `.yaml` file with csl but the default will be a `.bib` file. You see, if you were to use Zotero with another markdown program (like VS Code) you'd need to import your entire `.bib` file to wherever your markdown program is, and export it everytime you update your Zotero library. Because R Studio will make a new `.bib` file for you each time, it becomes seamless and you should never get an error when knitting related to not having a reference in your bibliography!
 
 Ok, let's add in a citation. I'll choose one of my papers from the graphical interface and click ok:
 
